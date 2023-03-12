@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"/>
+    <RelativeLayout
+        android:id="@+id/menu2"
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="30dp"/>
+    <RelativeLayout
+        android:id="@+id/menu3"
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="49dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/LOGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Bumble for Bees"
+        android:textColor="#D9B608"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="130dp" />
+
+    <TextView
+        android:id="@+id/Matched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="You Matched!"
+        android:layout_marginTop="135dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="60dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
+
+    <RelativeLayout
+        android:id="@+id/YellowRectangle"
+        android:layout_width="360dp"
+        android:layout_height="550dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_image"
+        android:backgroundTint="@color/BumbleYellow">
+
+        <RelativeLayout
+            android:id="@+id/Pic1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/photo"
+            android:backgroundTint="@color/white"
+            android:elevation="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <ImageView
+                android:id="@+id/bee1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/femalebee"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Pic2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="190dp"
+            android:background="@drawable/photo"
+            android:backgroundTint="@color/white"
+            android:elevation="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <ImageView
+                android:id="@+id/bee2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/male_bee"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QueenBee liked your photo!"
+            android:layout_marginTop="325dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/sentmessage"
+            android:background="@drawable/rounded_image"
+            android:backgroundTint="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="350dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:text="What do you say?\nYou, me, a hive, and lets start making honey together! 😉"
+            android:layout_alignLeft="@id/sentmessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="25dp"/>
+        <RelativeLayout
+            android:id="@+id/messagebar"
+            android:background="@drawable/rounded_image"
+            android:backgroundTint="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="475dp"/>
+
+            <EditText
+                android:id="@+id/messagebar_message"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="440dp"
+                android:hint="Type a message..."
+                android:layout_marginLeft="35dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="679dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="635dp">
+
+        <ImageButton
+                android:id="@+id/message"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="290dp"
+            android:background="@drawable/messageicon"
+            app:layout_constraintBaseline_toTopOf="parent"/>
+
+        <ImageButton
+                android:id="@+id/heart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="210dp"
+            android:background="@drawable/hearticon"
+            app:layout_constraintBaseline_toTopOf="parent" />
+
+        <ImageButton
+                android:id="@+id/action_bar_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+            android:background="@drawable/menuicon"
+            app:layout_constraintBaseline_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/profileicon"
+            app:layout_constraintBaseline_toTopOf="parent" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
